@@ -1,0 +1,75 @@
+<html>
+<head><meta charset="utf-8"/>
+<style>
+nav {
+  float: left;
+  width: 20%;
+  height:400px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 400px; 
+}
+
+
+
+
+
+</style>
+</head>
+<body><br><h3><center>Unified Order Management System</center></h3>
+<section>
+  <nav>
+  <ul>
+	
+	  
+	<li id="p1" onclick=function1()><a href="#">Consumer</a></li>
+     <li  onclick=function2()><a id="p2" href="#"></a></li> 
+	 <li><a id="p3" href="postpaid.html" target="if1"></a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <iFrame name="if1" style="width:100%; height:100%">
+	<ul>
+  <li><a href="#home">Card Reader</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+	</iframe>
+  </article>
+</section>
+<script>
+function function1(){
+var i=0;
+do{
+var node= document.createElement("li");
+var textnode= document.createTextNode("Mobile");
+node.appendChild(textnode);
+document.getElementById("p2").appendChild(node);
+i++;
+}
+while(i<1)
+}
+function function2(){
+var node= document.createElement("li");
+var textnode= document.createTextNode("Postpaid");
+node.appendChild(textnode);
+document.getElementById("p3").appendChild(node);
+}
+</script>
+</body>
+</html>
